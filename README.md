@@ -43,14 +43,14 @@ It can also pick only specified test tags for running.
 ```
 ./target/report/cucumber-html-reports/
 ```
-![](https://github.com/sangeeta-chakalabbi/AppiumAndroidTest/blob/main/mediaFiles/Report.png)
+![](https://github.com/sangeeta-chakalabbi/RESTAssuredTest/blob/main/mediaFiles/Report.png)
 
 
 **Logging Path**
 ```
 ./src/test/java/Logs/ApplicationLog
 ```
-![](https://github.com/sangeeta-chakalabbi/AppiumAndroidTest/blob/main/mediaFiles/Logs.png)
+![](https://github.com/sangeeta-chakalabbi/RESTAssuredTest/blob/main/mediaFiles/Logs.png)
 
 
 ## Assumptions
