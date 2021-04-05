@@ -80,6 +80,6 @@ It can also pick only specified test tags for running.
 
 ## Documentation at
 
-*https://github.com/sangeeta-chakalabbi/RESTAssured*
+*https://github.com/sangeeta-chakalabbi/RESTAssuredTest*
 
 
