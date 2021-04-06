@@ -2,11 +2,12 @@
 This framework tests weather conditions using Rest APIs.
 
 ## Tools and Frameworks used
-
+```
 * BDD cucumber
 * TestNG integration
 * Cucumber Json reports
 * log4j 
+```
 
 ## Libraries Used:
 
@@ -19,13 +20,13 @@ This framework tests weather conditions using Rest APIs.
 
 
 ## Prerequisites Installations:
-
+```
 * JAVA 1.8 - Install Java and set the JAVA_HOME path on your machine.
 * Rest Assured library
 * Logging
 * Maven
 * Cucumber -html -report
-
+```
 
 ## How This Framework Works:
 
@@ -35,6 +36,16 @@ It can also pick only specified test tags for running.
 * Here are the minimal things you have to do:
 * Create your tests
 * Create your Page Object class w.r.t test that you have written, if not created already (Take the reference from src/test/java/Features.
+
+
+## Ways to invoke the tests
+1- From ide you can invoke the TestRunner file which has links to feature file and the corresponding step definition.
+![](https://github.com/sangeeta-chakalabbi/RESTAssuredTest/blob/main/mediaFiles/InvokeFromIDE.png)
+
+2- From command line on either Windows or Linux, one could use maven command.
+To maven many different kinds of options can be passed a sample one is given here. Go through maven tutorials for more https://maven.apache.org/ref/3.1.0/maven-embedder/cli.html
+
+=> mvn test —Durl =“http://api.weatherbit.io/v2.0/forecast/daily”  Dcucumber.options="--tags @Regression"
 
 
 
@@ -66,7 +77,7 @@ It can also pick only specified test tags for running.
 ## Happy Path
 
 ```
-1.As a surfer, for I will get a list of short listed beaches on a given day
+1.As a surfer, I get a list of short listed beaches to consider on a given day
 ```
 
 
@@ -78,8 +89,21 @@ It can also pick only specified test tags for running.
 
 ```
 
+## Challenges faced and solutions
+
+```
+1. 	To come up with Step definitions which can be re-used
+2.   Coming up with design to encapsulate TestInput and OutPut.
+	Solution - Create different classes to hold testInput (weather criteria) and testOutput (short listed beach details) 
+2. 	To process the JSON reply in an efficient time saving manner.
+    Solution: Used JsonPath to filter out unwanted JSON entries (this increased efficiency by making sure there is now much smaller data to parse through for the test suite)
+    Solution2 - Used POJO (Plane Old Java Objects) to hold json responses', key value pairs
+
+```
+
+
 ## Documentation at
 
-*https://github.com/sangeeta-chakalabbi/RESTAssuredTest*
+*https://github.com/sangeeta-chakalabbi/RESTAssuredTest	*
 
 

@@ -1,4 +1,3 @@
-git status@RegressionTest
 Feature: As a surfer
 
   @RegressionTest

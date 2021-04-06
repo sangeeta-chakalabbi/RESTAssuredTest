@@ -15,7 +15,9 @@ import io.cucumber.junit.CucumberOptions;
 					  "html:target/cucumber-reports/Cucumber-report.html" ,
 					  "usage"
 					  },
-			dryRun = false
+			dryRun = false,
+			tags="@Regression"
+			
 		)
 public class TestRunner {
 
