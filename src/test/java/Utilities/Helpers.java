@@ -7,6 +7,7 @@ import java.io.FileInputStream;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -149,7 +150,7 @@ public class Helpers {
 			assertTrue(beachCriteria.beachesSuitableForPreferredDay1.isEmpty() || beachCriteria.beachesSuitableForPreferredDay2.isEmpty());
 		}		
 		
-		List<BeachDetails> beachDetailsTmp = new ArrayIndex<BeachDetails>();
+		List<BeachDetails> beachDetailsTmp = new ArrayList<BeachDetails>();
 		beachDetailsTmp.add(beach1);
 		beachDetailsTmp.add(beach2);
 		
